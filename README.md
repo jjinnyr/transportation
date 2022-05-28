@@ -1,7 +1,7 @@
 ## Notes for the Milestone Review 
 This text is a write-up of our project goals, background, and design process. It includes notes on things that are in progress, but the overall vision and scope of our project is laid out here. The current state of completed code is not as far as we would like. Our team pivoted from another project idea that did not work out, and we spent most of this week finding a new direction. We are confident that we can make good progress now that we have this direction. 
 
-Our current visualization can be accessed at: 
+Our current visualization can be accessed at: https://observablehq.com/@evankomp/seattle-vulnerable-road-users
 
 # Introduction
 
@@ -27,6 +27,26 @@ In designing our visualization structure, we focused on a hypothetical ‘advoca
 # Future work to realize this as a tool
 As it stands, a valid criticism of our work is that we built a visualization, not a visualization tool. We have identified a few things to fix that would make this useful as a tool, but these are either beyond our skillsets or the scope of this class project. First, this tool would have to be extended  to work for other cities. Technically this is feasible. As long as infrastructure, census tract data, and street map data are available for a city in geoJSON format, our data prep workflow could be easily wrapped into a few functions and applied to a new location. Configuring a web service or other interface to make this usable without editing javascript is out of the scope of a visualization class though. Second, a formal user verification and feedback study that asks actual transportation advocates or engineers to use our tool would allow us to incorporate feedback and make improvements. Finally, adding features that allow our visualizations to support a compelling narrative around transportation equity make this a tool that can be used to inspire action. Our original goal with this project was to build a narrative along these lines, it evolved to focus more on the visualization considerations involved in this problem. As our visualizations stand, they actually show that transportation infrastructure in Seattle is fairly evenly distributed. This makes the case for building a narrative a bit weaker, but is also a questionable finding. We need to dive deeper into the data, and consider whether the metric we are using to represent transportation infrastructure is a valid one. 
 
+# Implementation Summary
+### First plot: policy level
+- map of seattle streets and land border created.
+- Multivariate Choropleth at neighborhood level by people of color ratio and accessibility index (average of: bikelane miles per road mile, crosswalks per roadmile, each normalized over neighborhoods)
+- See notebook for description of legend
+
+### Second plot: local level
+- Map of only one neighborhood shown. Right now neighborhood is selected as function parameter
+- crosswalks and bikelanes depicted over streets
+- see notebook for description of legend
+
+### ToDo final result
+- explore/get feedback of other multivariate encodings. Dual choropleth (color and opacity) has been used before but is somewhat hard to interperet. We want fuziness and color based on class lecture but cannot figure out fuzziness in d3. Also have seen color and internal dot size as an option.
+- Consider best metric for accessibility. Individual togglable bike or crosswalk per mile may be better than normalized weighted sum
+- add legend to first plot
+- add legend to second plot
+- add local population pie chart to second plot
+- make second plot neighborhood selected by interaction with first plot
+- add toggle of cross/bike lanes for second plot
+- add collision scatters for second plot?
 
 
 # Bibliography (Written) 
