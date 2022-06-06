@@ -1,3 +1,5 @@
+#Method for multi-task level visualization of access to active transportation infrastructure and demographics
+
 ## Introduction
 
 Transportation safety is an issue that impacts everyone, but it is especially important for those of use who walk, bike, use a wheelchair, or otherwise mix with car traffic without the safety afforded by a car. These road users are dubbed ‘Vulnerable Road Users’ ( VRUs) in transportation circles [1]. In the past year, over 200 pedestrians and 150 cyclists have been involved in collisions in Seattle, with at least 12 pedestrian fatalities in 2021 [2, 3]]  This is despite the city’s stated ‘vision zero’ goal of reducing traffic deaths to zero by 2030 [4]. 
