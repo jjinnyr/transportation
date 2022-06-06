@@ -1,4 +1,4 @@
-#Method for multi-task level visualization of access to active transportation infrastructure and demographics
+# Method for multi-task level visualization of access to active transportation infrastructure and demographics
 
 ## Introduction
 
